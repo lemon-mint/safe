@@ -1,0 +1,2 @@
+# safe
+completely safe functions
