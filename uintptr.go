@@ -19,7 +19,6 @@ func ToUintptr(v interface{}) (uintptr, error) {
 	if strings.HasPrefix(vPtrStr, "0x") {
 		vPtrStr = vPtrStr[2:]
 	} else {
-		println(vPtrStr)
 		return 0, ErrNotPointer
 	}
 	ptr, err := strconv.ParseUint(vPtrStr, 16, 64)
